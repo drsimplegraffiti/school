@@ -17,6 +17,8 @@ public class SchoolApplication {
 		logger.info("***********************************************************Starting the application");
 		logger.info("***********************************************************Starting the application");
 		logger.info("***********************************************************Starting the application");
+		logger.info("***********************************************************Starting the application");
+
 
 		SpringApplication.run(SchoolApplication.class, args);
 	}
