@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -49,6 +50,7 @@ public class StudentService {
         existingStudent.setStudentNumber(student.getStudentNumber());
         existingStudent.setEmail(student.getEmail());
         existingStudent.setGpa(student.getGpa());
+        existingStudent.setUpdatedAt(new Date(System.currentTimeMillis()));
         return studentRepository.save(existingStudent);
     }
 
